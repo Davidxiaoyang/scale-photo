@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+#wrapper{
+	width:200px;
+	height:200px;
+	border:1px solid #ccc;
+	padding:5px;
+	position:relative;
+}
+#wrapper .small_pic{
+	width:200px;
+	height:200px;
+	position:relative;
+	cursor:crosshair;
+}
+#wrapper .float_layer{
+	width:50px;
+	height:50px;
+	border:1px solid #000;
+	filter:alpha(opacity=30);
+	opacity:0.3;
+	background:red;
+	position:absolute;
+	display:none;
+	
+}
+#wrapper .small_pic img{
+	width:200px;
+	height:200px;
+}
+#wrapper .big_pic{
+	width:200px;
+	height:230px;
+	position:absolute;
+	border:2px solid #ccc;
+	top:0;
+	left:230px;
+	overflow:hidden;
+	display:none;
+	
+}
+#wrapper .big_pic img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+</style>
+
+</head>
+<body>
+<div id="wrapper" class="parent">
+	<div class="small_pic">
+		<span class="float_layer"></span>
+		<img src="./images/faf2b2119313b07edf6f2a090ed7912396dd8ce4.jpg" />
+	</div>
+	<div class="big_pic">
+		<img src="./images/faf2b2119313b07edf6f2a090ed7912396dd8ce4.jpg" />
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="./js/photozoom.js"></script>
+<script type="text/javascript">
+
+photozoom();
+
+</script>
